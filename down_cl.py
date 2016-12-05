@@ -187,8 +187,8 @@ def dothreads(line):
     dothreads_count=dothreads_count+1
     if title.startswith('<font')==False:
         print('开始执行第{0}个线程 ---------'.format(dothreads_count))
-        path='1024\{0}'.format(title)
-        urlPath='1024\\{0}\\url.txt'.format(title)
+        path='1024.zptp\{0}'.format(title)
+        urlPath='1024.zptp\\{0}\\url.txt'.format(title)
         if os.path.exists(path)==True and os.path.isfile(urlPath)==True: # os.path.exists(path)==True and os.listdir(path)==True:
             print('已存在该文件夹及文件：{0} =================='.format(path))
             return
@@ -206,8 +206,8 @@ def groupthread(m_tr):
         all=getAAll(line)
         title=getAContent(all).replace(':','')
         if title.startswith('<font')==False:
-            path='1024\{0}'.format(title)
-            urlPath='1024\\{0}\\url.txt'.format(title)
+            path='1024.zptp\{0}'.format(title)
+            urlPath='1024.zptp\\{0}\\url.txt'.format(title)
             if os.path.exists(path)==True and os.path.isfile(urlPath)==True:
                 return
             else:
@@ -246,8 +246,8 @@ def doWork(url_):
     print('开始执行最后几个线程')
 
 
-pageurl='http://1024.91lulea.biz/pw/thread.php?fid=5&page={0}&ty=6366477'
-for a in range(6,98,1):#range(1,5,2) #代表从1到5，间隔2(不包含5)
+pageurl='http://1024.91lulea.biz/pw/thread.php?fid=15&page={0}&ty=6366477' 
+for a in range(1,50,1):#range(1,5,2) #代表从1到5，间隔2(不包含5)
     doWork(pageurl.format(a))
 
 print('----------------------【执行完成】 当前时间：{0} --------------------------'.format(time.strftime( ISOTIMEFORMAT, time.localtime())))
