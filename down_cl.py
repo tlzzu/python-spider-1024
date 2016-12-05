@@ -218,7 +218,7 @@ def groupthread(m_tr):
                 print('开启线程：----')
     t1.join()
 def printDateTime():
-    print('---------------------- 当前时间：{0} --------------------------'.format(time.strftime( ISOTIMEFORMAT, time.localtime())))
+    print('---------------------- current time:{0} --------------------------'.format(time.strftime( ISOTIMEFORMAT, time.localtime())))
 
 printDateTime()
 rootUrl='http://1024.91lulea.biz/pw/'
