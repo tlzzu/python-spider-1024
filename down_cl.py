@@ -10,9 +10,7 @@ import time
 import os
 import time
 import threading
-import sys
 
-sys.setdefaultencoding( "utf-8" )
 
 # python C:\code\python\down_cl.py
 
