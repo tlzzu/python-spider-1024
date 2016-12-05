@@ -253,7 +253,6 @@ for a in range(6,98,1):#range(1,5,2) #代表从1到5，间隔2(不包含5)
 print('----------------------【执行完成】 当前时间：{0} --------------------------'.format(time.strftime( ISOTIMEFORMAT, time.localtime())))
 
 
-
 # python C:\code\python\down_cl.py
 
 # fh = open('tongling12.html', 'w')  #保存string文件
